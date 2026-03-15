@@ -1,34 +1,32 @@
-[  {
-    "kernelSource": {
-      "name": "Tensor101-NetHunter",
-      "repo": "https://github.com/gs-bluraviole/android_kernel_google_gs101",
-      "branch": "android-gs-raviole-6.1-android15-qpr2",
-      "device": "raviole"
+[{
+  "kernelSource": {
+    "name": "bluejay-nethunter",
+    "repo": "https://android.googlesource.com/kernel/gs",
+    "branch": "android-gs-pixel-5.10",
+    "device": "gs101"
+  },
+  "withKernelSU": false,
+  "toolchains": [
+    {
+      "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
+      "branch": "master",
+      "name": "gas"
     },
-    "withKernelSU": false,
-    "toolchains": [
-      {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
-        "branch": "master",
-        "name": "gas"
-      },
-      {
-        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-        "branch": "16",
-        "name": "clang"
-      }
-    ],
-    "params": {
-      "ARCH": "arm64",
-      "CROSS_COMPILE": "aarch64-linux-gnu-",
-      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
-      "CLANG_TRIPLE": "aarch64-linux-gnu-",
-      "AR": "",
-      "CC": "clang"
-    },
-    "extraParams": {
-      "KEEP": ""
+    {
+      "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+      "branch": "17",
+      "name": "clang"
     }
+  ],
+  "params": {
+    "ARCH": "arm64",
+    "CROSS_COMPILE": "aarch64-linux-gnu-",
+    "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
+    "CLANG_TRIPLE": "aarch64-linux-gnu-",
+    "AR": "",
+    "CC": "clang"
+  },
+  "extraParams": {
+    "KEEP": ""
   }
-]
+}]
