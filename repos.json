@@ -1,6 +1,6 @@
 [  {
     "kernelSource": {
-      "name": "Tensor101 NetHunter",
+      "name": "Tensor101-NetHunter",
       "repo": "https://github.com/gs-bluraviole/android_kernel_google_gs101",
       "branch": "android-gs-raviole-6.1-android15-qpr2",
       "device": "bluejay"
